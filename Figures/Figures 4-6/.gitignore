@@ -1,0 +1,40 @@
+# Checkpoints
+*-checkpoint.*
+
+# Cache
+__pycache__
+
+# Saved Results
+saved_results/
+saved_embeddings/
+old_notebooks/
+**/old*/
+**/*_old/
+attentions*.pkl
+*_prs_df*
+results.csv
+*_process.png
+*_process.pdf
+*_old.*
+
+# Scripts
+graph-training.py
+embedding_analysis.py
+
+# Environment
+env/
+
+# Models
+models/**/*.h5
+
+# Edges
+_elist.edg
+
+# Embeddings
+embeddings-*.npy
+embeddings-*.txt
+mlp-*.txt
+
+# Refs and sources
+reference/
+sources/

@@ -1,0 +1,18 @@
+{
+  "gamma": 0.9,
+  "step_size": 10,
+  "opt": "Adam",
+  "stagnant": 5,
+  "epochs": 50,
+  "num_subgraph": 3,
+  "return_results": true,
+  "need_layer_norm": true,
+  "need_batch_norm": true,
+  "batch_size": 5,
+  "num_heads":8,
+  "edge_attr_comb": "2,2,4",
+  "num_gat_nodes": "512,256",
+  "num_fcn_nodes": "128",
+  "dropout": 0.6,
+  "learn_rate": 0.0001
+}
