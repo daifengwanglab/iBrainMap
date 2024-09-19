@@ -7,7 +7,8 @@ Precision medicine for brain diseases faces many challenges, including understan
 ## System Requirements
 This code has been tested on Ubuntu 18.04 with the following dependencies:
 
-Python version: 3.9.16
+Python version: 3.9.16\
+R version: 4.4.1
 
 numpy=1.23.5\
 scipy=1.10.1\
