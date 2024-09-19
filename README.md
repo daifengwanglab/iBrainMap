@@ -121,4 +121,4 @@ python -u get_emb_attn.py --test_data_dir="./demo/step2/sample_graphs/" --config
 ```
 
 ## System Requirements
-This project is covered under the ** Apache 2.0 License. **
+This project is covered under the **Apache 2.0 License.**
