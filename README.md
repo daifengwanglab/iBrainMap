@@ -8,8 +8,8 @@ Precision medicine for brain diseases faces many challenges, including understan
 This code has been tested on Ubuntu 18.04 with the following dependencies:
 
 Python version: 3.9.16\
-R version: 4.4.1
 
+Python packages:\
 numpy=1.23.5\
 scipy=1.10.1\
 pandas=1.5.3\
@@ -21,7 +21,19 @@ torch-sparse=0.6.17+pt20cu117\
 numba=0.56.4\
 scikit-learn=1.3.0\
 matplotlib=3.7.1\
-seaborn=0.12.2
+seaborn=0.12.2\
+networkx=3.1\
+pyscenic=\
+arboreto=0.1.6
+
+R version: 4.4.1
+
+R packages:\
+reticulate=1.6-5\
+parallel=\
+Seurat=\
+Matrix=\
+reshape2=
 
 ## Usage
 ### Constructing Personalized Functional Genomic Graphs (PFGs)
