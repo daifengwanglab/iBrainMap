@@ -4,6 +4,24 @@ Precision medicine for brain diseases faces many challenges, including understan
 
 ![Figure1](https://github.com/user-attachments/assets/3785a4c6-c8e9-4bb9-b50a-3a915197537d)
 
+## System Requirements
+This code has been tested on Ubuntu 18.04 with the following dependencies:
+
+Python version: 3.9.16
+
+numpy=1.23.5
+scipy=1.10.1
+pandas=1.5.3
+scanpy=1.9.3
+torch=2.0.0+cu1
+torch-geometric=2.3.0
+torch-scatter=2.1.1
+torch-sparse=0.6.17+pt20cu117
+numba=0.56.4
+scikit-learn=1.3.0
+matplotlib=3.7.1
+seaborn=0.12.2
+
 ## Usage
 ### Constructing Personalized Functional Genomic Graphs (PFGs)
 We provide details of the PFG construction with an example. PFG construction involves four sub-steps:
