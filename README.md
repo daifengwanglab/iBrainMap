@@ -21,7 +21,7 @@ torch-sparse=0.6.17+pt20cu117\
 numba=0.56.4\
 scikit-learn=1.3.0\
 matplotlib=3.7.1\
-seaborn=0.12.2\
+seaborn=0.12.2\n
 networkx=3.1\
 pyscenic=\
 arboreto=0.1.6
@@ -34,6 +34,16 @@ parallel=\
 Seurat=\
 Matrix=\
 reshape2=
+
+## Installation
+
+Download the iBrainMap code from github by downloading the respository zip directly or using git commands and navigate to the repository:
+
+```
+git clone https://github.com/daifengwanglab/iBrainMap.git
+cd iBrainMap
+```
+This takes around 2 minutes depending on the network speed.
 
 ## Usage
 ### Constructing Personalized Functional Genomic Graphs (PFGs)
