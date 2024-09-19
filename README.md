@@ -20,7 +20,7 @@ torch-sparse=0.6.17+pt20cu117\
 numba=0.56.4\
 scikit-learn=1.3.0\
 matplotlib=3.7.1\
-seaborn=0.12.2\
+seaborn=0.12.2
 
 ## Usage
 ### Constructing Personalized Functional Genomic Graphs (PFGs)
