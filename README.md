@@ -9,10 +9,10 @@ This code has been tested on Ubuntu 18.04 with the following dependencies:
 
 Python version: 3.9.16
 
-numpy=1.23.5\\
-scipy=1.10.1\\
-pandas=1.5.3\\
-scanpy=1.9.3\\
+numpy=1.23.5\
+scipy=1.10.1\
+pandas=1.5.3\
+scanpy=1.9.3\
 torch=2.0.0+cu117\\
 torch-geometric=2.3.0\\
 torch-scatter=2.1.1\\
