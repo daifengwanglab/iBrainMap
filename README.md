@@ -120,3 +120,5 @@ Along with phenotype predictions, the users can also extract graph embeddings an
 python -u get_emb_attn.py --test_data_dir="./demo/step2/sample_graphs/" --config_file="./demo/step2/config.txt" --model_file='psychad_AD_best_model.pth' --save='./demo/step2/' --verbose="test_output" > "emb_attn_logs.txt"
 ```
 
+## System Requirements
+This project is covered under the ** Apache 2.0 License. **
