@@ -49,7 +49,7 @@ We provide details of the PFG construction with an example. PFG construction inv
 <ins>Step 1a</ins> infers cell type interactions and requires snRNA-seq data in .npz format, cell metadata information, and the gene_ids of the genes with expression data being used.
 ``` Command Line
 # Step 1a: Inferring cell type interactions
-Rscript generate_cell_cell_interactions.R "./demo/step1/sample_3_gexpr.npz" "./demo/step1/sample_3_cell_meta.csv" "barcodekey" "subclass" "./demo/step1/sample_3_gene_ids.csv" "./demo/step1/sample_3" "human"
+Rscript generate_cell_cell_interactions.R "./demo/step1/sample_3_gexpr.npz" "./demo/step1/sample_3_cell_meta.csv" "./demo/step1/sample_3_gene_ids.csv" "barcodekey" "subclass" "./demo/step1/sample_3" "human"
 ```
 The above code produces "./demo/step1/sample_3_comm_nw_weight.csv" file that contains information about the cell type interactions and its weights.
 
