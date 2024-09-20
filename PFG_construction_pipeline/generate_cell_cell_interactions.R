@@ -22,38 +22,6 @@ if (length(args) == 7) {
   species = args[7]
 }
 
-getIndividualNw <- function(gene_expr_file, cell_metadata_file, gene_list_file, 
-                            cell_barcode_column, cell_group_column, output_path, species=species) {
-  # Get donor name to use it as file output
-  donor = gsub('.npz', '', gene_expr_file)
-  
-  # Read the cell metatadata information.
-  #Cell metadata file should contain atleast two columns: barcode column and cell_group column
-  meta = read.csv(cell_metadata_file, header=T)
-  meta = meta[, c(cell_barcode_column, cell_group_column)]
-  colnames(meta) =  c('barcodekey', cell_group_column)
-  meta$barcodekey = gsub('-', '.', meta$barcodekey)
-  rownames(meta) = meta$barcodekey
-  
-  # The npz file contains cell by genes. We read it and transpose it to gene by cells
-  expr = as.matrix(sp$load_npz(gene_expr_file))
-  expr = t(expr)
-  # Log normalization
-  expr = log(expr + 1)
-  # Adding names of genes and cells
-  rownames(expr) = gene_list$V1
-  colnames(expr) = meta$barcodekey
-  #Creating a sparse matrix
-  pcells = Matrix(expr, sparse=T)
-
-  rm(expr)
-  gc()
-
-  # Run Cellchat
-  cellchat = runCellChat(pcells, meta, cell_group_column, species=species, fname=paste0(output_path, '/', donor))
-}
-
-
 runCellChat <- function(rna_data, phen, cellGrp_name, species='human', fname='test') {
   #Create a CellChat object from a data matrix
   cellchat <- createCellChat(object = rna_data, meta = phen, group.by = cellGrp_name)
@@ -98,5 +66,40 @@ runCellChat <- function(rna_data, phen, cellGrp_name, species='human', fname='te
 
   return(cellchat)
 }
+
+getIndividualNw <- function(gene_expr_file, cell_metadata_file, gene_list_file, 
+                            cell_barcode_column, cell_group_column, output_path, species=species) {
+  # Get donor name to use it as file output
+  donor = gsub('.npz', '', gene_expr_file)
+  
+  # Read the cell metatadata information.
+  #Cell metadata file should contain atleast two columns: barcode column and cell_group column
+  meta = read.csv(cell_metadata_file, header=T)
+  meta = meta[, c(cell_barcode_column, cell_group_column)]
+  colnames(meta) =  c('barcodekey', cell_group_column)
+  meta$barcodekey = gsub('-', '.', meta$barcodekey)
+  rownames(meta) = meta$barcodekey
+  
+  # The npz file contains cell by genes. We read it and transpose it to gene by cells
+  expr = as.matrix(sp$load_npz(gene_expr_file))
+  expr = t(expr)
+  # Log normalization
+  expr = log(expr + 1)
+  # Adding names of genes and cells
+  rownames(expr) = gene_list$V1
+  colnames(expr) = meta$barcodekey
+  #Creating a sparse matrix
+  pcells = Matrix(expr, sparse=T)
+
+  rm(expr)
+  gc()
+
+  # Run Cellchat
+  cellchat = runCellChat(pcells, meta, cell_group_column, species=species, fname=paste0(output_path, '/', donor))
+}
+
+getIndividualNw(gene_expr_file, cell_metadata_file, gene_list_file, cell_barcode_column, 
+                cell_group_column, output_path, species=species)
+
 
 
