@@ -125,5 +125,5 @@ python -u get_emb_attn.py --test_data_dir="./demo/step2/sample_graphs/" --config
 ```
 Run time: <3 min (a. and b. combined)
 
-## System Requirements
+## License
 This project is covered under the **MIT License**.
