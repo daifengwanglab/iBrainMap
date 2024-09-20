@@ -27,13 +27,13 @@ pyscenic=\
 arboreto=0.1.6
 
 R version: 4.4.1
-
 - R packages:\
-reticulate=1.6-5\
-parallel=\
-Seurat=\
-Matrix=\
-reshape2=
+reticulate=1.39.0\
+parallel=4.4.0\
+Seurat=5.1.0\
+CellChat=2.1.1\
+Matrix=1.7.0\
+reshape2=1.4.4
 
 ## Installation
 
@@ -85,6 +85,8 @@ Complete details on the arguments and the files required for all the above-menti
 
 ---
 
+Running time for each donor: ~5-7 min (depending on the number of cells present in the individual)
+
 ### Training Knowledge-Guided Graph Neural Network (KG-GNN) model from scratch
 KG-GNN model training involves two steps and each step is explained with a demo example below. The files for running the demo are available in the demo/step2/ folder. The users must first extract the demo graphs from "demo/step2/sample_graphs.zip" file.
 
@@ -102,6 +104,9 @@ The above code uses default parameter setting for training the model. Details on
 # Step 2b: Training the final model
 python -u final_train.py --data_dir="demo/step2/sample_graphs/" --phenotype_file="demo/step2/metadata.csv" --phenotype_column='labels' --id_column="sampleid" --heldout_sampleID_file="None" --config_file="./demo/step2/config.txt" --save="./demo/step2/test/" --verbose="test_model" > "final_train_logs.txt"
 ```
+
+Running time for full dataset of 1494 individuals: ~18 min (using an Quadro RTX 6000 Graphics card)
+
 ---
 
 ### Using the pre-trained model
@@ -118,7 +123,9 @@ Along with phenotype predictions, the users can also extract graph embeddings an
 ``` Command Line
 # Step 3a: Extracting graph embeddings and edge importance scores
 python -u get_emb_attn.py --test_data_dir="./demo/step2/sample_graphs/" --config_file="./demo/step2/config.txt" --model_file='psychad_AD_best_model.pth' --save='./demo/step2/' --verbose="test_output" > "emb_attn_logs.txt"
+
 ```
+Running time: <3 min (a. and b. combined)
 
 ## System Requirements
 This project is covered under the **MIT License**.
