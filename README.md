@@ -7,33 +7,30 @@ Precision medicine for brain diseases faces many challenges, including understan
 ## System Requirements
 This code has been tested on Ubuntu 18.04 with the following dependencies:
 
-Python version: 3.9.16
+- Python version: 3.9.16 with the following packages:
+  - numpy=1.23.5\
+  - scipy=1.10.1\
+  - pandas=1.5.3\
+  - scanpy=1.9.3\
+  - torch=2.0.0+cu117\
+  - torch-geometric=2.3.0\
+  - torch-scatter=2.1.1\
+  - torch-sparse=0.6.17+pt20cu117\
+  - numba=0.56.4\
+  - scikit-learn=1.3.0\
+  - matplotlib=3.7.1\
+  - seaborn=0.12.2\
+  - networkx=3.1\
+  - pyscenic=\
+  - arboreto=0.1.6
 
-- Python packages:\
-numpy=1.23.5\
-scipy=1.10.1\
-pandas=1.5.3\
-scanpy=1.9.3\
-torch=2.0.0+cu117\
-torch-geometric=2.3.0\
-torch-scatter=2.1.1\
-torch-sparse=0.6.17+pt20cu117\
-numba=0.56.4\
-scikit-learn=1.3.0\
-matplotlib=3.7.1\
-seaborn=0.12.2\
-networkx=3.1\
-pyscenic=\
-arboreto=0.1.6
-
-R version: 4.4.1
-- R packages:\
-reticulate=1.39.0\
-parallel=4.4.0\
-Seurat=5.1.0\
-CellChat=2.1.1\
-Matrix=1.7.0\
-reshape2=1.4.4
+- R version: 4.4.1 with following dependencies:
+  - reticulate=1.39.0\
+  - parallel=4.4.0\
+  - Seurat=5.1.0\
+  - CellChat=2.1.1\
+  - Matrix=1.7.0\
+  - reshape2=1.4.4
 
 ## Installation
 
