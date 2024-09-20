@@ -103,7 +103,7 @@ The above code uses default parameter setting for training the model. Details on
 python -u final_train.py --data_dir="demo/step2/sample_graphs/" --phenotype_file="demo/step2/metadata.csv" --phenotype_column='labels' --id_column="sampleid" --heldout_sampleID_file="None" --config_file="./demo/step2/config.txt" --save="./demo/step2/test/" --verbose="test_model" > "final_train_logs.txt"
 ```
 
-Run time for training full dataset of 1494 individuals: ~18 min (using an Quadro RTX 6000 Graphics card)
+Run time for training full dataset of 1494 individuals: ~18 min (using Quadro RTX 6000 Graphics card)
 
 ---
 
