@@ -80,7 +80,7 @@ This creates ./demo/step1/sample_3_graph.pkl file containing the donor's PFG.
 <br>
 Complete details on the arguments and the files required for all the above-mentioned steps are present <a href= "https://github.com/daifengwanglab/iBrainMap/tree/main/PFG_construction_pipeline">here</a>.
 
-Running time for each donor: ~5-7 min (depending on the number of cells present in the donor)
+Run time for each donor: ~5-7 min (depending on the number of cells present in the donor)
 
 ---
 
@@ -103,7 +103,7 @@ The above code uses default parameter setting for training the model. Details on
 python -u final_train.py --data_dir="demo/step2/sample_graphs/" --phenotype_file="demo/step2/metadata.csv" --phenotype_column='labels' --id_column="sampleid" --heldout_sampleID_file="None" --config_file="./demo/step2/config.txt" --save="./demo/step2/test/" --verbose="test_model" > "final_train_logs.txt"
 ```
 
-Running time for full dataset of 1494 individuals: ~18 min (using an Quadro RTX 6000 Graphics card)
+Run time for training full dataset of 1494 individuals: ~18 min (using an Quadro RTX 6000 Graphics card)
 
 ---
 
@@ -123,7 +123,7 @@ Along with phenotype predictions, the users can also extract graph embeddings an
 python -u get_emb_attn.py --test_data_dir="./demo/step2/sample_graphs/" --config_file="./demo/step2/config.txt" --model_file='psychad_AD_best_model.pth' --save='./demo/step2/' --verbose="test_output" > "emb_attn_logs.txt"
 
 ```
-Running time: <3 min (a. and b. combined)
+Run time: <3 min (a. and b. combined)
 
 ## System Requirements
 This project is covered under the **MIT License**.
