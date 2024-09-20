@@ -80,9 +80,10 @@ This creates ./demo/step1/sample_3_graph.pkl file containing the donor's PFG.
 <br>
 Complete details on the arguments and the files required for all the above-mentioned steps are present <a href= "https://github.com/daifengwanglab/iBrainMap/tree/main/PFG_construction_pipeline">here</a>.
 
+Running time for each donor: ~5-7 min (depending on the number of cells present in the individual)
+
 ---
 
-Running time for each donor: ~5-7 min (depending on the number of cells present in the individual)
 
 ### Training Knowledge-Guided Graph Neural Network (KG-GNN) model from scratch
 KG-GNN model training involves two steps and each step is explained with a demo example below. The files for running the demo are available in the demo/step2/ folder. The users must first extract the demo graphs from "demo/step2/sample_graphs.zip" file.
