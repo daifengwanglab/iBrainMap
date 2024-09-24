@@ -40,7 +40,7 @@ Download the iBrainMap code from github by downloading the respository zip direc
 git clone https://github.com/daifengwanglab/iBrainMap.git
 cd iBrainMap
 ```
-This takes around 2 minutes depending on the network speed.
+This takes around 2 minutes depending on the internet speed.
 
 ## Usage
 ### Constructing Personalized Functional Genomic Graphs (PFGs)
