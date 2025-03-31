@@ -34,13 +34,25 @@ This code has been tested on Ubuntu 18.04 with the following dependencies:
 
 ## Installation
 
-Download the iBrainMap code from github by downloading the respository zip directly or using git commands and navigate to the repository:
+### Option 1: Install from GitHub source code
+Clone or download the repository and enter the project directory,
 
 ```
 git clone https://github.com/daifengwanglab/iBrainMap.git
 cd iBrainMap
 ```
-This takes around 2 minutes depending on the internet speed.
+This takes around 2 minutes depending on internet speed.
+
+### Option 2: Docker Image
+To facilitate reproducibility and ease of use, we provide a Docker image containing all dependencies pre-installed. Users can download and run iBrainMap without configuring software versions or resolving conflicts. 
+
+Download the [Docker image (4.98Gb)](https://doi.org/10.5281/zenodo.13635594), then run the following commands:
+
+```
+docker load -i ibrainmap.tar
+docker run -it --rm -v $(pwd):/workspace -p 8888:8888 ibrainmap
+```
+The process takes around 10 minutes depending on internet speed.
 
 ## Usage
 ### Constructing Personalized Functional Genomic Graphs (PFGs)
