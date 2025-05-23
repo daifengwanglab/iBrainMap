@@ -1,8 +1,8 @@
 # iBrainMap
 
-Precision medicine for brain diseases faces many challenges, including understanding the heterogeneity of disease phenotypes. Such heterogeneity can be attributed to the variations in cellular and molecular mechanisms across individuals. However, personalized mechanisms remain elusive, especially at the single-cell level. To address this, the PsychAD project generated population-level single-nucleus RNA-seq data for 1,494 human brains with over 6.3 million nuclei covering diverse clinical phenotypes and neuropsychiatric symptoms (NPSs) in Alzheimer’s disease (AD). Leveraging this data, we analyzed personalized single-cell functional genomics involving cell type interactions and gene regulatory networks. In particular, we developed a knowledge-guided graph neural network model to learn latent representations of functional genomics (embeddings) and quantify importance scores of cell types, genes, and network edges for each individual. Our embeddings improved phenotype classifications and revealed potentially novel subtypes and population trajectories for AD progression, cognitive impairment, and NPSs. Our importance scores prioritized personalized functional genomic information and showed significant differences in cell type-specific regulatory mechanisms across various phenotypes. Such information also allowed us to further identify subpopulation-level biological pathways, including ancestry for AD. Finally, we associated genetic variants with cell type gene regulatory network changes across individuals, i.e., gene regulatory QTLs (grQTLs), providing novel functional genomic insights compared to existing QTLs. We further validated our results using external cohorts. Our analyses have been summarized in an open-source computational framework named iBrainMap for general personalized studies. All results are also available as a personalized functional genomic atlas for AD.
+Understanding the heterogeneity of brain diseases requires approaches that capture population-level variation in molecular and cellular mechanisms. Functional genomics has emerged as a key strategy for investigating mechanisms such as gene regulation and cell–cell communication in Alzheimer's disease (AD). While recent large-scale single-cell studies have revealed population-level gene expression trends, modelling functional genomic variation at the individual donor level remains challenging. The PsychAD project generated single-nucleus RNA-seq data from 1,494 human brains, comprising over 6.3 million nuclei, spanning a range of clinical phenotypes and neuropsychiatric symptoms in AD. Leveraging this dataset, we performed personalized functional genomics analyses, capturing each donor's cell type interactions and gene regulatory networks. Using a knowledge-guided graph neural network, we learned latent representations of functional genomics (embeddings) and scored the importance of cell types, genes, and their interactions for each donor. In contrast to population-averaged methods, our framework preserves individual donor variation in cell types and genes and their interactions. The embeddings improved phenotype classification and enabled discovery of subtypes and disease progression trajectories in AD. Our importance scores identified significant inter-donor differences in gene regulation and prioritized personalized functional genomic features. Finally, we mapped genetic variants to changes in donor-level gene regulatory networks, identifying gene regulatory QTLs (grQTLs) with distinct features from traditional eQTLs. We validated our findings in external cohorts, demonstrating robustness and generalizability. All results are available via iBrainMap, an open-source framework and personalized functional genomics atlas for AD. Our work provides a scalable approach to model population-scale functional genomic variation and offers a resource for mechanistic insights and precision targeting in brain diseases
 
-![Figure1](https://github.com/user-attachments/assets/3785a4c6-c8e9-4bb9-b50a-3a915197537d)
+![Figure1](https://github.com/user-attachments/assets/8d9decf0-b8fb-4cbe-9726-71423d84df64)
 
 ## System Requirements
 This code has been tested on Ubuntu 18.04 with the following dependencies:
@@ -24,7 +24,7 @@ This code has been tested on Ubuntu 18.04 with the following dependencies:
   - pyscenic=
   - arboreto=0.1.6
 
-- R version: 4.4.1 with following dependencies:
+- R version: 4.4.1 with the following dependencies:
   - reticulate=1.39.0
   - parallel=4.4.0
   - Seurat=5.1.0
@@ -35,7 +35,7 @@ This code has been tested on Ubuntu 18.04 with the following dependencies:
 ## Installation
 
 ### Option 1: Install from GitHub source code
-Clone or download the repository and enter the project directory,
+Clone or download the repository and enter the project directory.
 
 ```
 git clone https://github.com/daifengwanglab/iBrainMap.git
