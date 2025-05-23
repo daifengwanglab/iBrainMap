@@ -5,14 +5,11 @@ library(dplyr)
 data = read.csv(file='./Figures/Figures 4-6/data/tf_degs.csv')
 size_range = c(2, 8)
 
-# colour blind palette from http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
-cbPalette <- c("#E69F00", "#56B4E9",
-               "#009E73", "#F0E442", "#0072B2",
-               "#D55E00", "#CC79A7", "#DF69A7")
 ggplot(data, aes(x = cellgroup, y = gene, colour = log_fold_change, 
                  size = inv_fdr, group = stage)) +
   geom_point() +
-  scale_color_gradientn(colours = viridis::viridis(10)) +
+  scale_color_gradient2(low="blue", mid="darkgrey", high="red", space ="Lab",
+                        breaks=brk) +
   # scale_color_gradientn(colours = terrain.colors(20)) +
   # scale_color_gradient2(low = "blue", high = "red") +
   
