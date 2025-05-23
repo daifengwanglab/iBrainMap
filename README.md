@@ -21,7 +21,7 @@ This code has been tested on Ubuntu 18.04 with the following dependencies:
   - matplotlib=3.7.1
   - seaborn=0.12.2
   - networkx=3.1
-  - pyscenic=
+  - pyscenic=0.12.0
   - arboreto=0.1.6
 
 - R version: 4.4.1 with the following dependencies:
