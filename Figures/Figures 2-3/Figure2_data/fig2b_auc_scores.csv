@@ -1,0 +1,76 @@
+,contrast_name,contrast,AUC,stage,level,model,class_type,stage_cat,contrast_name_cat
+0,SCZ,c07x,0.905882352941176,Disease vs Control,A,SVM,Binary,Disease vs Control,SCZ
+1,SCZ,c07x,0.772549019607843,Disease vs Control,A,SVM,Binary,Disease vs Control,SCZ
+2,SCZ,c07x,0.913725490196078,Disease vs Control,A,SVM,Binary,Disease vs Control,SCZ
+3,SCZ,c07x,0.832661290322581,Disease vs Control,A,SVM,Binary,Disease vs Control,SCZ
+4,SCZ,c07x,0.752016129032258,Disease vs Control,A,SVM,Binary,Disease vs Control,SCZ
+5,"AD
+Resilience",c28x,0.94487795966743,Disease vs Control,A,Regression,Multi-class,Disease vs Control,"AD
+Resilience"
+6,"AD
+Resilience",c28x,0.8463646922183509,Disease vs Control,A,Regression,Multi-class,Disease vs Control,"AD
+Resilience"
+7,"AD
+Resilience",c28x,0.9106741989373089,Disease vs Control,A,Regression,Multi-class,Disease vs Control,"AD
+Resilience"
+8,"AD
+Resilience",c28x,0.8251217792575799,Disease vs Control,A,Regression,Multi-class,Disease vs Control,"AD
+Resilience"
+9,"AD
+Resilience",c28x,0.8899360990304684,Disease vs Control,A,Regression,Multi-class,Disease vs Control,"AD
+Resilience"
+30,BRAAK,r01x,0.748146179396179,Disease Progression,B,MLP,Multi-class,Disease Progression,BRAAK
+31,BRAAK,r01x,0.810072614760115,Disease Progression,B,MLP,Multi-class,Disease Progression,BRAAK
+32,BRAAK,r01x,0.734922730495647,Disease Progression,B,MLP,Multi-class,Disease Progression,BRAAK
+33,BRAAK,r01x,0.880567387077804,Disease Progression,B,MLP,Multi-class,Disease Progression,BRAAK
+34,BRAAK,r01x,0.795424053459768,Disease Progression,B,MLP,Multi-class,Disease Progression,BRAAK
+35,CERAD,r03x,0.735493536254768,Disease Progression,B,SVM,Multi-class,Disease Progression,CERAD
+36,CERAD,r03x,0.764574508782785,Disease Progression,B,SVM,Multi-class,Disease Progression,CERAD
+37,CERAD,r03x,0.753693542041965,Disease Progression,B,SVM,Multi-class,Disease Progression,CERAD
+38,CERAD,r03x,0.806137184555828,Disease Progression,B,SVM,Multi-class,Disease Progression,CERAD
+39,CERAD,r03x,0.752879696733516,Disease Progression,B,SVM,Multi-class,Disease Progression,CERAD
+40,Cogdx,r05x,0.847925444722431,Disease Progression,B,Regression,Multi-class,Disease Progression,Cogdx
+41,Cogdx,r05x,0.742083218263831,Disease Progression,B,Regression,Multi-class,Disease Progression,Cogdx
+42,Cogdx,r05x,0.822790409851995,Disease Progression,B,Regression,Multi-class,Disease Progression,Cogdx
+43,Cogdx,r05x,0.758787282001707,Disease Progression,B,Regression,Multi-class,Disease Progression,Cogdx
+44,Cogdx,r05x,0.776734844881349,Disease Progression,B,Regression,Multi-class,Disease Progression,Cogdx
+10,"Dys-
+phoria",c71x,0.650969529085873,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"Dys-
+phoria"
+11,"Dys-
+phoria",c71x,0.601108033240997,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"Dys-
+phoria"
+12,"Dys-
+phoria",c71x,0.601108033240997,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"Dys-
+phoria"
+13,"Dys-
+phoria",c71x,0.554016620498615,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"Dys-
+phoria"
+14,"Dys-
+phoria",c71x,0.429824561403509,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"Dys-
+phoria"
+15,DecInt,c72x,0.5,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,Regression,Binary,Neuropsychiatric Symptoms,DecInt
+16,DecInt,c72x,0.480263157894737,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,Regression,Binary,Neuropsychiatric Symptoms,DecInt
+17,DecInt,c72x,0.516447368421053,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,Regression,Binary,Neuropsychiatric Symptoms,DecInt
+18,DecInt,c72x,0.595394736842105,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,Regression,Binary,Neuropsychiatric Symptoms,DecInt
+19,DecInt,c72x,0.546052631578947,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,Regression,Binary,Neuropsychiatric Symptoms,DecInt
+20,"S/WG
+/G/S",c90x,0.596837944664032,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"S/WG
+/G/S"
+21,"S/WG
+/G/S",c90x,0.617391304347826,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"S/WG
+/G/S"
+22,"S/WG
+/G/S",c90x,0.739130434782609,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"S/WG
+/G/S"
+23,"S/WG
+/G/S",c90x,0.797520661157025,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"S/WG
+/G/S"
+24,"S/WG
+/G/S",c90x,0.636363636363636,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,"S/WG
+/G/S"
+25,D/M,c92x,0.60061919504644,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,D/M
+26,D/M,c92x,0.617647058823529,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,D/M
+27,D/M,c92x,0.679738562091503,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,D/M
+28,D/M,c92x,0.65359477124183,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,D/M
+29,D/M,c92x,0.5,Neuropsychiatric Symptoms,Neuropsychiatric Symptoms,SVM,Binary,Neuropsychiatric Symptoms,D/M
