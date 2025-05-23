@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 # Locations
-DATA_FOLDER = '../../data/'
+DATA_FOLDER = '../data/'
 META = DATA_FOLDER + 'metadata_dec.csv'
 GENOTYPE_META = DATA_FOLDER + 'genotype_metadata_dec.csv'
 CONTRAST = DATA_FOLDER + 'contrasts.csv'
@@ -39,6 +39,9 @@ ATT_FOLDER = DATA_FOLDER + 'freeze3/recent/'
 ATT_CSV = ATT_FOLDER + 'MSSM_attn_all_224.csv'
 ATT = ATT_FOLDER + 'MSSM_attn_all_224.pkl'
 GE = ATT_FOLDER + 'HBCC_10p10p_224_embed_attn.pkl'
+GI = ATT_FOLDER + 'node_imp_score.csv'
+GRQTL_TF = ATT_FOLDER + 'cisTF_qtl.csv'  # _topVar
+GRQTL_TG = ATT_FOLDER + 'cisTG_qtl.csv'  # _topVar
 # SID = NOT PROVIDED
 
 
@@ -62,6 +65,18 @@ def get_attention_columns(scaled=False):
     exclude += [c for c in graph.columns if not c[-1].isdigit()]
 
     return [c for c in graph.columns if c not in exclude]
+
+
+def get_importance_scores(): return pd.read_csv(GI, index_col=0)
+
+
+def get_grqtls(): 
+    cisTF = pd.read_csv(GRQTL_TF, delimiter='\t')
+    cisTG = pd.read_csv(GRQTL_TG, delimiter='\t')
+    cisTF['Kind'] = 'cisTF'
+    cisTG['Kind'] = 'cisTG'
+
+    return pd.concat([cisTF, cisTG], axis=0)
 
 
 def load_graph_by_id(graph_id, source='attention', column=None, train_omit=True, average=False, **kwargs):
